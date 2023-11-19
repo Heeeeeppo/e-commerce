@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.reset-container {
+    height: 100%;
+    background-color: #DBDFEA;
+}
+
+.reset-form-container {
+    height: 85%;
+}
+
+#resetPasswordForm {
+    width: 100%;
+    align-items: center;
+}
+
+footer {
+    height: 20%;
+}

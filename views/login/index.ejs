@@ -1,21 +1,28 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+<%- include("../partials/header.ejs", {title: "Login", isLoggedIn: false}) %>
+<article>
+    <div class="login-background">
+        <div class="form-container flex-container flex-col">
+            <h2 class="form-title theme-color">Login</h2>
+            <p class="form-intro theme-color">Unlock a seamless shopping experience</p>
+            <hr>
+            <form id="form" class="flex-container flex-col">
+                <div class="input-field flex-container flex-col">
+                    <label class="form-label theme-color" for="username">Username or Email Address</label>
+                    <input class="form-input" type="text" placeholder="Enter your usersername or email: " id="username">
+                </div>
+                <div class="input-field flex-container flex-col">
+                    <label class="form-label theme-color" for="password">Password</label>
+                    <input class="form-input" type="text" placeholder="Enter your password: " id="password">
+                </div>
 
-    <h2>Login</h2>
-    <form id="login-form">
-        <input type="text" placeholder="Username: " id="username">
-        <input type="text" placeholder="Your password: " id="password">
-        <!-- <input type="email" placeholder="Email:" id="email"> -->
-        <button type="submit">Login</button>
-    </form>
+                <button class="form-button" type="submit">Login</button>
+            </form>
+            <a class="forgot-btn theme-color" href="/api/user/forgot-password">forgot password</a>
+        </div>
+    </div>
 
     <script src="index.js"></script>
     
-</body>
-</html>
+</article>
+
+<%- include("../partials/footer.ejs") %>

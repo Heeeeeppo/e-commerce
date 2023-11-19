@@ -1,0 +1,33 @@
+:root {
+    --theme: #435585;
+}
+
+.favorite-container {
+    padding: 1rem 2rem;
+}
+
+.heart {
+    font-size: 1.2rem;
+    margin: 0 2rem;
+    color: red;
+}
+
+ul[id='favorite-container'] {
+    list-style-type: none;
+}
+  
+ul[id='favorite-container'] li {
+    padding: 8px 20px;
+    border-bottom: 1px solid var(--theme);
+    margin-bottom: 10px;
+}
+
+.theme-color {
+    color: var(--theme);
+}
+
+h3.no-product {
+    margin: 1rem auto;
+    position: relative;
+    right: 1rem;
+}

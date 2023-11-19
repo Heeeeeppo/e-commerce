@@ -1,22 +1,36 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+<%- include("../partials/header.ejs", {title: "Register", isLoggedIn: false}) %>
+<main>
 
-    <h2>Register</h2>
-    <form id="register-form">
-        <input type="text" placeholder="Username: " id="username">
-        <input type="text" placeholder="Your password: " id="password">
-        <input type="text" placeholder="Confirm password: " id="confirm-pwd">
-        <input type="email" placeholder="Email:" id="email">
-        <button type="submit">Register</button>
-    </form>
+    <div class="register-background">
+        <div class="register-form-container flex-container flex-col">
+            <h2 class="form-title theme-color">Register</h2>
+            <p class="form-intro theme-color">Unlock a seamless shopping experience</p>
+            <hr>
+            <form id="form" class="flex-container flex-col">
+                <div class="input-field flex-container flex-col">
+                    <label class="form-label theme-color" for="username">Username</label>
+                    <input class="form-input" type="text" placeholder="Enter your usersername: " id="username">
+                </div>
+                <div class="input-field flex-container flex-col">
+                    <label class="form-label theme-color" for="password">Password</label>
+                    <input class="form-input" type="text" placeholder="Enter your password: " id="password">
+                </div>
+                <div class="input-field flex-container flex-col">
+                    <label class="form-label theme-color" for="confirm-pwd">Confirm Password</label>
+                    <input class="form-input" type="text" placeholder="Confirm your password: " id="confirm-pwd">
+                </div>
+                <div class="input-field flex-container flex-col">
+                    <label class="form-label theme-color" for="email">Email Address</label>
+                    <input class="form-input" type="text" placeholder="Enter your email: " id="email">
+                </div>
+                
+                <!-- <input type="email" placeholder="Email:" id="email"> -->
+                <button class="form-button" type="submit">Register</button>
+            </form>
+        </div>
+    </div>
 
     <script src="index.js"></script>
     
-</body>
-</html>
+</main>
+<%- include("../partials/footer.ejs") %>

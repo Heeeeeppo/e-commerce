@@ -1,0 +1,40 @@
+<%- include("partials/header.ejs", {title: "Admin", isLoggedIn: isLoggedIn}) %>
+
+<main>
+    <div class="admin-container">
+        <h1>Welcome to Admin page</h1>
+        <div class="info-container theme-border">
+            <ul id="user-list">
+                <% userInfo.forEach(user => { %>
+                    <li>
+                        <div class="info-item flex-container flex-col">
+                            <div class="user-info flex-container flex-row">
+                                <label class="text-bold theme-color text-size">Username:</label>
+                                <span class="user-value theme-color text-size"><%= user.name %></span>
+                                <label class="text-bold theme-color text-size">Email address:</label>
+                                <span class="user-value theme-color text-size"><%= user.email %></span>
+                            </div>
+                        </div>
+                        <ul id="liked-products-list">
+                            <% user.likedProducts.forEach(product => { %>
+                                <li>
+                                    <div class="flex-container flex-row product-list">
+                                    <span class="product-value theme-color text-size"><%= product.productName %></span>
+                                    <span class="product-value theme-color product-type"><%= product.type %></span>
+                                    <span class="product-value theme-color text-bold text-size">By <%= product.brand %></span>
+                                </div>
+                                </li>
+                                
+                            <% }) %>
+                        </ul>
+                    </li>
+               <% }); %>
+            </ul>
+        </div>
+       
+    </div>
+</main>
+
+<link rel="stylesheet" href="styles/admin.css">
+
+<%- include("partials/footer.ejs") %>

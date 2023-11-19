@@ -1,0 +1,86 @@
+.form-container {
+    margin: 0 auto;
+    width: 40%;
+    height: 60%;
+    align-items: center;
+    background-color: white;
+    position: relative;
+    top: 10%;
+    border-top: solid lightgray;
+    border-width: 2px;
+}
+
+.register-form-container {
+    margin: 0 auto;
+    width: 40%;
+    height: 85%;
+    align-items: center;
+    background-color: white;
+    position: relative;
+    top: 10%;
+    border-top: solid lightgray;
+    border-width: 2px;
+}
+
+.register-background{
+    background-color: #DBDFEA;
+    height: 80vh;
+}
+
+.login-background{
+    background-color: #DBDFEA;
+    height: 80vh;
+}
+
+.form-title {
+    margin: 15px 0 10px 0;
+}
+
+.form-intro {
+    font: Normal 14px/24px "Open Sans", sans-serif;
+}
+
+hr {
+    width: 80%;
+    margin: 10px;
+    border: 0;
+    border-top: 1px solid rgba(0,0,0,.1);
+}
+
+#form {
+    width: 100%;
+    align-items: center;
+}
+
+.input-field {
+    width: 80%;
+    margin: 10px 0;
+}
+
+input[type=text] {
+    padding: 0 20px;
+}
+
+.form-label {
+    margin: 5px 0;
+}
+
+.form-input {
+    padding: 5px 0;
+    background-color: #fdfdfd;
+    border: 1px solid #eceef4;
+    border-radius: 3px;
+    height: 40px;
+}
+
+.form-button {
+    margin-top: 5px;
+    padding: 8px 25px;
+    background-color: #435585;
+    color: white;
+    outline: none;
+    font-size: 13px;
+    font-weight: 400;
+    border: 0 none;
+    border-radius: 2px;
+}

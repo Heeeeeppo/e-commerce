@@ -1,0 +1,23 @@
+<%- include("partials/header.ejs", {title: "Home", isLoggedIn: isLoggedIn}) %>
+
+<main>
+    <div class="main-container flex-container flex-col">
+        <h1>Welcome to Product Gallary</h1>
+        <div class="filter-panel flex-container flex-row">
+            <div class="filter-field">
+                <input type="text" id="filter" name="filter" placeholder="Add filter tag(type or brand)">
+                <button id="addBtn">Add</button>
+            </div>
+        </div>   
+        <div id="filter-tags-container" class="flex-container flex-row"></div>  
+
+        <div id="products-container" class="grid-container"></div>
+        <div id="pagination-container" class="flex-container flex-row" ></div>
+
+    </div>
+    <%- include("partials/sidebar.ejs"), {likedProducts: likedProducts, currentUser: currentUser} %>
+
+</main>
+
+
+<%- include("partials/footer.ejs") %>

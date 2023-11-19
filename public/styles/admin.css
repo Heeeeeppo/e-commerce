@@ -1,0 +1,73 @@
+:root {
+    --theme: #435585;
+}
+
+.theme-color {
+    color: var(--theme);
+}
+
+.theme-border {
+    border: 2px solid var(--theme);
+}
+
+#user-list li::marker {
+    color: var(--theme);
+}
+
+#user-list > li {
+    border-bottom: 1px solid var(--theme);
+    margin-top: 10px;
+}
+
+.info-item {
+    margin-bottom: 10px;
+}
+
+#liked-products-list li {
+    margin-bottom: 10px;
+}
+
+.text-bold {
+    font-weight: bold;
+}
+
+.text-size {
+    font-size: 1.2rem;
+}
+
+.info-container {
+    margin: 1rem 2rem;
+    padding: 1rem 2rem;
+}
+
+label {
+    margin-right: 5px;
+}
+
+.user-value {
+    margin-right: 1rem;
+}
+
+#liked-products-list {
+    padding-left: 1rem;
+}
+
+#liked-products-list li{
+    height: 2rem;
+}
+
+.product-list {
+    align-items: center;
+}
+
+.product-value {
+    margin-right: 1rem;
+}
+
+.product-type {
+    border: 1px solid var(--theme);
+    padding: 4px 6px;
+    border-radius: 10px;
+    font-size: 12px;
+    text-align: center;
+}

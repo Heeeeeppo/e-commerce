@@ -1,0 +1,26 @@
+<aside>
+    <div class="favorite-panel flex-container flex-col">
+        <h1>Your favorite product</h1>
+        <ul id="favorite-container">
+            <!-- <li class="favorite-item">
+                <div class="item-container flex-container flex-row">
+                    <p>Name</p>
+                    <i class="fa fa-heart-o heart"></i>
+                </div>
+            </li>
+            <li class="favorite-item">
+                <div class="item-container flex-container flex-row">
+                    <p>Name</p>
+                    <i class="fa fa-heart-o heart"></i>
+                </div>
+            </li> -->
+        </ul>
+    </div>
+</aside>
+
+<link rel="stylesheet" href="styles/sidebar.css">
+<script>
+    window.currentUser = JSON.parse('<%- JSON.stringify(currentUser) %>')
+    window.likedProducts = JSON.parse('<%- JSON.stringify(likedProducts) %>')
+</script>
+<script src="sidebar.js"></script>

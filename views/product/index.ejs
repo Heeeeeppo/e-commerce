@@ -1,0 +1,52 @@
+<%- include("../partials/header.ejs", {title: "Home", isLoggedIn: isLoggedIn, product: product, sameBrandProduct: sameBrandProduct, currentUser: currentUser, likedProducts: likedProducts}) %>
+
+<main>
+    <h1>Product details</h1>
+    <div class="detail-container flex-container flex-col">
+        <div class="flex-container flex-row current-product">
+            <img src="" alt="" id="detail-product-img">
+            <div class="info-panel flex-container flex-col">
+                <div class="name-type flex-container flex-row">
+                    <h2 class="product-name theme-color"><%= product.productName %></h2>
+                    <h3 class="product-type theme-color"><%= product.type %></h3>
+                    <i class="fa fa-heart-o heart"></i>
+                    <!-- <span class="glyphicon glyphicon-heart-empty heart"></span> -->
+                </div>
+                <div class="brand flex-container flex-row">
+                    <p class="theme-color text">Sold by</p>
+                    <h3 class="product-brand theme-color"> <%= product.brand %></h3>
+                </div>
+                
+                <div class="des-field">
+                    <h3 class="theme-color">description</h3>
+                    <p class="product-description theme-color"><%= product.description %></p>
+                </div>
+            </div>
+        </div>
+        <h1>Same brand products</h1>
+        <div class="other-container">
+            <div class="flex-container flex-row" id="carousel">
+                <!-- <div class="carousel-card flex-container flex-col" id=""> -->
+                    <!-- <img src="" alt="" id="card-img">
+                    <span>name</span> -->
+                <!-- </div> -->
+            </div>
+        </div>
+    </div>
+    
+</main>
+
+
+<%- include("../partials/footer.ejs") %>
+
+
+<script>
+    window.product = JSON.parse('<%- JSON.stringify(product) %>')
+    window.sameBrandProduct = JSON.parse('<%- JSON.stringify(sameBrandProduct) %>')
+    window.currentUser = JSON.parse('<%- JSON.stringify(currentUser) %>')
+    window.likedProducts = JSON.parse('<%- JSON.stringify(likedProducts) %>')
+</script>
+
+<script src="/product.js"></script>
+
+<link rel="stylesheet" href="/styles/detail.css">
